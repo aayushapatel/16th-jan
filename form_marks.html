@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table
+            {
+                margin-top: 30px;
+                margin-left: auto;
+                margin-right: auto;      
+            }
+        </style>
+        <title>
+            Form_Marks
+        </title>
+    </head>
+    <body>
+        <form action="" method="post" id=form>
+            <table border=1>
+                <tr>
+                    <th><label for="fullName">Name : </label></th>
+                    <td><input type="text" name="fullname" id="fullName" autofocus></td>
+                </tr>
+                <tr>
+                    <th><label for="mathsMarks">Maths Marks : </label></th>
+                    <td><input type="text" name="mathsmarks" id="mathsMarks"></td>
+                </tr>
+                <tr>
+                    <th><label for="engMarks">English Marks : </label></th>
+                    <td><input type="text" name="engmarks" id="engMarks"></td>
+                </tr>
+                <tr>
+                    <th><label for="passYear">Passing Year : </label></th>
+                    <td><select name="passyear" id="passYear">
+                        <option value="2000">2000</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <th colspan=2><input type="button" value="Add Student" onclick="validateStudent()"></th>
+                </tr>
+            </table>
+            <div id="tableDisplay"></div>
+        </form>
+        <script src="form_marks.js"></script>
+    </body>
+</html>
